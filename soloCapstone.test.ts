@@ -92,6 +92,7 @@ test('Test 2: Open the scores page', async () => {
 test('Test 3: Go to News and then bo back to the home page', async () => {
     await page.navigate()
     await (await driver.findElement(page.news)).click();
+    await (driver.sleep(5000));
     await (await driver.findElement(page.homePage)).click();
 })
 
